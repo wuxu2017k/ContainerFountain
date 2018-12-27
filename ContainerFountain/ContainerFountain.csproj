@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD5D7AC4-02FD-4211-A6E8-4F2E786326E5}</ProjectGuid>
+    <ProjectTypeGuids>{563295b5-8906-4a76-be2d-ff8e711c1204};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContainerFountain</RootNamespace>
+    <AssemblyName>ContainerFountain</AssemblyName>
+    <StartPageUrl>Form1.wgx</StartPageUrl>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartPageUrl>Form1.wgx</StartPageUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gizmox.WebGUI.Common, Version=4.6.5701.0, Culture=neutral, PublicKeyToken=263fa4ef694acff6, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Forms.Charts, Version=4.6.5701.0, Culture=neutral, PublicKeyToken=f1bb83df6a8597fb, processorArchitecture=MSIL" />
+    <Reference Include="Gizmox.WebGUI.Forms.Themes, Version=4.6.5701.0, Culture=neutral, PublicKeyToken=263fa4ef694acff6, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Forms, Version=4.6.5701.0, Culture=neutral, PublicKeyToken=c508b41386c60f1d, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Server, Version=4.6.5701.0, Culture=neutral, PublicKeyToken=3de6eb684226c24d, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="fastJSON" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+    <Content Include="Resources\Icons\Actions\Cancel.ico" />
+    <Content Include="Resources\Icons\Actions\DefaultPW.ico" />
+    <Content Include="Resources\Icons\Actions\Delete.ico" />
+    <Content Include="Resources\Icons\Actions\FunceModule.ico" />
+    <Content Include="Resources\Icons\Actions\logout.ico" />
+    <Content Include="Resources\Icons\Actions\New.ico" />
+    <Content Include="Resources\Icons\Actions\NewChild.ico" />
+    <Content Include="Resources\Icons\Actions\RecDel.ICO" />
+    <Content Include="Resources\Icons\Actions\RecDetail.ico" />
+    <Content Include="Resources\Icons\Actions\RecEdit.ico" />
+    <Content Include="Resources\Icons\Actions\RecNew.ico" />
+    <Content Include="Resources\Icons\Actions\RecSearch.ico" />
+    <Content Include="Resources\Icons\Actions\Refresh.ico" />
+    <Content Include="Resources\Icons\Actions\Save.ico" />
+    <Content Include="Resources\Icons\Actions\Undo.ico" />
+    <Content Include="Resources\Icons\Folders\Folders.Folder_yellow_close_16.ico" />
+    <Content Include="Resources\Icons\Folders\Folders.Folder_yellow_open_16.ico" />
+    <Content Include="Resources\Images\1.jpg" />
+    <Content Include="Resources\Images\1995b1e7-5573-44bd-bf17-82520e96e7bb.jpg" />
+    <Content Include="Resources\Images\2.jpg" />
+    <Content Include="Resources\Images\640.jpg" />
+    <Content Include="Resources\Images\BlueSkyWhiteCloud.jpg" />
+    <Content Include="Resources\Images\Chart-Pie.ico" />
+    <Content Include="Resources\Images\Chart.ico" />
+    <Content Include="Resources\Images\dlt.jpg" />
+    <Content Include="Resources\Images\dlt1.jpg" />
+    <Content Include="Resources\Images\e点滴.png" />
+    <Content Include="Resources\Images\e点滴1.png" />
+    <Content Include="Resources\Images\e点滴2.png" />
+    <Content Include="Resources\Images\logina.png" />
+    <Content Include="Resources\Images\RecSearch.ico" />
+    <Content Include="Resources\Images\一点一滴logo.png" />
+    <Content Include="Resources\Images\公司logo 副本.png" />
+    <Content Include="Resources\Images\抬头.png" />
+    <Content Include="Resources\Images\抬头全白.png" />
+    <Content Include="Resources\Images\抬头全白1.png" />
+    <Content Include="Resources\抬头.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ClsFuncsA.cs" />
+    <Compile Include="Containerheartbeat\Containerheartbeat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Containerheartbeat\Containerheartbeat.Designer.cs">
+      <DependentUpon>Containerheartbeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Containerheartbeat\DScontainerheartbeat.cs">
+      <DependentUpon>DScontainerheartbeat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Containerheartbeat\DScontainerheartbeat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DScontainerheartbeat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\DSContainerFountain.cs">
+      <DependentUpon>DSContainerFountain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\DSContainerFountain.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSContainerFountain.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerFountain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerFountain.Designer.cs">
+      <DependentUpon>FrmContainerFountain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerFountainMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerFountainMX.Designer.cs">
+      <DependentUpon>FrmContainerFountainMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerPrice.Designer.cs">
+      <DependentUpon>FrmContainerPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerPriceMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmContainerPriceMX.Designer.cs">
+      <DependentUpon>FrmContainerPriceMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCFuncsTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCFuncsTree.Designer.cs">
+      <DependentUpon>UCFuncsTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Dsedid.cs">
+      <DependentUpon>DSedid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSedid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSedid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType\DSproducttype.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSproducttype.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType\FrmProductType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductType\FrmProductType.Designer.cs">
+      <DependentUpon>FrmProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType\FrmProductTypeMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductType\FrmProductTypeMX.Designer.cs">
+      <DependentUpon>FrmProductTypeMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeViewComboBox\TreeViewComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewComboBox\TreeViewComboBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeViewComboBox\TreeViewComboBoxForm.Designer.cs">
+      <DependentUpon>TreeViewComboBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmConfigMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmConfigMX.Designer.cs">
+      <DependentUpon>FrmConfigMX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmJGGL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmJGGL.Designer.cs">
+      <DependentUpon>FrmJGGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmMKGL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmMKGL.Designer.cs">
+      <DependentUpon>FrmMKGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionLBLB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionLBLB.Designer.cs">
+      <DependentUpon>FrmOptionLBLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionLBXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionLBXX.Designer.cs">
+      <DependentUpon>FrmOptionLBXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionXMXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmOptionXMXX.Designer.cs">
+      <DependentUpon>FrmOptionXMXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmRoleFuncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmRoleFuncs.Designer.cs">
+      <DependentUpon>FrmRoleFuncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmRolesLB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmRolesLB.Designer.cs">
+      <DependentUpon>FrmRolesLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmRolesXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmRolesXX.Designer.cs">
+      <DependentUpon>FrmRolesXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmYgPie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmYgPie.Designer.cs">
+      <DependentUpon>FrmYgPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmYgTjtb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmYgTjtb.Designer.cs">
+      <DependentUpon>FrmYgTjtb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmYuanGongLB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmYuanGongLB.Designer.cs">
+      <DependentUpon>FrmYuanGongLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XTGL\FrmYuanGongXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XTGL\FrmYuanGongXX.Designer.cs">
+      <DependentUpon>FrmYuanGongXX.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasets\DSedid.xsc">
+      <DependentUpon>DSedid.xsd</DependentUpon>
+    </Content>
+    <Content Include="ContainerInput\DSContainerFountain.xsc">
+      <DependentUpon>DSContainerFountain.xsd</DependentUpon>
+    </Content>
+    <Content Include="Containerheartbeat\DScontainerheartbeat.xsc">
+      <DependentUpon>DScontainerheartbeat.xsd</DependentUpon>
+    </Content>
+    <None Include="Containerheartbeat\DScontainerheartbeat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DScontainerheartbeat.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Containerheartbeat\DScontainerheartbeat.xss">
+      <DependentUpon>DScontainerheartbeat.xsd</DependentUpon>
+    </Content>
+    <None Include="ContainerInput\DSContainerFountain.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSContainerFountain.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ContainerInput\DSContainerFountain.xss">
+      <DependentUpon>DSContainerFountain.xsd</DependentUpon>
+    </Content>
+    <None Include="Datasets\DSedid.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSedid.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Datasets\DSedid.xss">
+      <DependentUpon>DSedid.xsd</DependentUpon>
+    </Content>
+    <Content Include="ProductType\DSproducttype.xsc">
+      <DependentUpon>DSproducttype.xsd</DependentUpon>
+    </Content>
+    <None Include="ProductType\DSproducttype.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSproducttype.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ProductType\DSproducttype.xss">
+      <DependentUpon>DSproducttype.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Generated\" />
+    <Folder Include="Resources\UserData\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Containerheartbeat\Containerheartbeat.resx">
+      <DependentUpon>Containerheartbeat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmContainerFountain.resx">
+      <DependentUpon>FrmContainerFountain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmContainerFountainMX.resx">
+      <DependentUpon>FrmContainerFountainMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmContainerPrice.resx">
+      <DependentUpon>FrmContainerPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmContainerPriceMX.resx">
+      <DependentUpon>FrmContainerPriceMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCFuncsTree.resx">
+      <DependentUpon>UCFuncsTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductType\FrmProductType.resx">
+      <DependentUpon>FrmProductType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductType\FrmProductTypeMX.resx">
+      <DependentUpon>FrmProductTypeMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewComboBox\TreeViewComboBoxForm.resx">
+      <DependentUpon>TreeViewComboBoxForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmConfigMX.resx">
+      <DependentUpon>FrmConfigMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmJGGL.resx">
+      <DependentUpon>FrmJGGL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmMKGL.resx">
+      <DependentUpon>FrmMKGL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmOptionLBLB.resx">
+      <DependentUpon>FrmOptionLBLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmOptionLBXX.resx">
+      <DependentUpon>FrmOptionLBXX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmOptionXMXX.resx">
+      <DependentUpon>FrmOptionXMXX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmRoleFuncs.resx">
+      <DependentUpon>FrmRoleFuncs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmRolesLB.resx">
+      <DependentUpon>FrmRolesLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmRolesXX.resx">
+      <DependentUpon>FrmRolesXX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmYgPie.resx">
+      <DependentUpon>FrmYgPie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmYgTjtb.resx">
+      <DependentUpon>FrmYgTjtb.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmYuanGongLB.resx">
+      <DependentUpon>FrmYuanGongLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XTGL\FrmYuanGongXX.resx">
+      <DependentUpon>FrmYuanGongXX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLTLib\DLTLib.csproj">
+      <Project>{2ad0a19c-9a66-4b7d-aa71-9efb7983ba74}</Project>
+      <Name>DLTLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomReference Include="Gizmox.WebGUI.Forms.Themes">
+      <HintPath>D:\wuxu\ContainerFountain\ContainerFountain\bin\Gizmox.WebGUI.Forms.Themes.dll</HintPath>
+      <Visible>false</Visible>
+    </CustomReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Condition="" Project="$(MSBuildExtensionsPath)\Gizmox\v14.0\Net4.6\Gizmox.VWGApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8594</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8594/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
