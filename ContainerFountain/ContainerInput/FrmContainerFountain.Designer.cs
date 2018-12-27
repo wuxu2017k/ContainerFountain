@@ -41,6 +41,7 @@ namespace ContainerFountain.ContainerInput
             Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
             Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
             Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
             this.imgLst = new Gizmox.WebGUI.Forms.ImageList(this.components);
             this.bds = new Gizmox.WebGUI.Forms.BindingSource(this.components);
             this.dsContainerFountain1 = new ContainerFountain.ContainerInput.DSContainerFountain();
@@ -66,6 +67,7 @@ namespace ContainerFountain.ContainerInput
             this.dataGridViewTextBoxColumn6 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.grpFill = new Gizmox.WebGUI.Forms.GroupBox();
+            this.dataGridViewTextBoxColumn8 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsContainerFountain1)).BeginInit();
             this.grpLeft.SuspendLayout();
@@ -265,7 +267,8 @@ namespace ContainerFountain.ContainerInput
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
             this.dgv.DataSource = this.bds;
             this.dgv.Dock = Gizmox.WebGUI.Forms.DockStyle.Fill;
             this.dgv.ExcludeFromUniqueId = false;
@@ -349,6 +352,14 @@ namespace ContainerFountain.ContainerInput
             this.grpFill.TabStop = false;
             this.grpFill.Text = "货柜列表和状态";
             // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "capacity";
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn8.HeaderText = "货柜容量";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
             // FrmContainerFountain
             // 
             this.Controls.Add(this.grpFill);
@@ -394,5 +405,6 @@ namespace ContainerFountain.ContainerInput
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
