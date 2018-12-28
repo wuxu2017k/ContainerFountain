@@ -167,6 +167,18 @@
     <Compile Include="ContainerInput\FrmContainerPriceMX.Designer.cs">
       <DependentUpon>FrmContainerPriceMX.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContainerInput\FrmRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmRepair.Designer.cs">
+      <DependentUpon>FrmRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerInput\FrmRepairMX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerInput\FrmRepairMX.Designer.cs">
+      <DependentUpon>FrmRepairMX.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UCFuncsTree.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -383,6 +395,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContainerInput\FrmContainerPriceMX.resx">
       <DependentUpon>FrmContainerPriceMX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmRepair.resx">
+      <DependentUpon>FrmRepair.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerInput\FrmRepairMX.resx">
+      <DependentUpon>FrmRepairMX.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UCFuncsTree.resx">

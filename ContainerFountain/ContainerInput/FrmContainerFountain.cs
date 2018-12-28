@@ -412,5 +412,20 @@ ORDER BY xh0, xh1, xh2, xh3, xh4, xh5,xh6
             f.ShowDialog();
             f.prepare(tmp_containerRow.id,tmp_containerRow.container_no);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //判断是否点击Dgv中的数据
+            if (bds.Current == null)
+            {
+                //弹窗返回
+                ClsMsgBox.Ts("请选择饮水机列表中的一行数据！");
+                return;
+            }
+            DSContainerFountain.tcontainerRow tmp_containerRow = (DSContainerFountain.tcontainerRow)((DataRowView)bds.Current).Row;
+            FrmRepair f = new FrmRepair();
+            f.ShowDialog();
+            f.prepare(tmp_containerRow.id, tmp_containerRow.container_no);
+        }
     }
 }
