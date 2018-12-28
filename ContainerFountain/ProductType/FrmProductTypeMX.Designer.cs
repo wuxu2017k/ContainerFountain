@@ -195,7 +195,7 @@ namespace ContainerFountain.ProductType
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Size = new System.Drawing.Size(310, 293);
-            this.Text = "FrmProductTypeMX";
+            this.Text = "产品类型";
             this.ResumeLayout(false);
 
         }
