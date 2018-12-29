@@ -80,7 +80,8 @@ namespace ContainerFountain.ProductType
         {
             this.bds.EndEdit();
             tproducttype_dicTableAdapter.Update(dsproducttype.tproducttype_dic);
-       
+            this.DialogResult = DialogResult.OK;
+            string _type = NED == EnumNED.NEW ? "40" : NED == EnumNED.EDIT ? "30" : "";
 
         }
 

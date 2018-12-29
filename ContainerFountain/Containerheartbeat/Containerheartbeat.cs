@@ -267,6 +267,8 @@ ORDER BY xh0, xh1, xh2, xh3, xh4, xh5,xh6
                 sWhere += string.Format(" and upload_time>='{0}'", dtpKs_upload_time.Value);
             if (dtpJs_upload_time.Checked)
                 sWhere += string.Format(" and upload_time<='{0}'", dtpJs_upload_time.Value);
+            if (!string.IsNullOrWhiteSpace(txtcontainer_no.Text))
+                sWhere += string.Format(" and container_no='{0}'",txtcontainer_no.Text);
             vcontainerStatusTableAdapter1.FillByWhere(dScontainerheartbeat1.vcontainerStatus, sWhere);
 
         }
