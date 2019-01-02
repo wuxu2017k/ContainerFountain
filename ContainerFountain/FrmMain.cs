@@ -45,6 +45,7 @@ namespace ContainerFountain
                 this.cmbTheme.Items.Add(strTheme);
             this.cmbTheme.Text = VWGContext.Current.CurrentTheme;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.cmbTheme_SelectedIndexChanged);
+            cmbTheme.SelectedIndex = 4;
             updateWaterFountainStatus();
             initListener();
         }
