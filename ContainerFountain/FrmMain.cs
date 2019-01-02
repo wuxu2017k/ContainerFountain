@@ -16,6 +16,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using DLTLib.Classes;
 using ContainerFountain.Datasets;
+using ContainerFountain.Containerheartbeat;
 
 
 #endregion
@@ -25,7 +26,7 @@ namespace ContainerFountain
     public partial class FrmMain : Form
     {
        DSedid.vusersRow userRow = VWGContext.Current.Session["userRow"] as DSedid.vusersRow;
-      
+        FrmContainerheartbeatWarn formstatus = new FrmContainerheartbeatWarn();
         public FrmMain()
         {
             InitializeComponent();
@@ -41,6 +42,41 @@ namespace ContainerFountain
                 this.cmbTheme.Items.Add(strTheme);
             this.cmbTheme.Text = VWGContext.Current.CurrentTheme;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.cmbTheme_SelectedIndexChanged);
+            updateWaterFountainStatus();
+            initListener();
+        }
+        private void Listener(object sender, EventArgs e)
+        {
+
+            string cmd = string.Format(@"select count(*) from tcontainer_status where status='0' or gprs_status='0'");
+            if (Convert.ToInt32(ClsMSSQL.GetValue(cmd, ClsDBCon.ConStrKj)) > 0)
+            {
+
+                formstatus.Prepare();
+                formstatus.ShowDialog();
+                formstatus.Closed += new EventHandler(ListenerFrm_Closed);
+                timer1.Enabled = false;
+            }
+        }
+        private void initListener()
+        {
+            timer1.Enabled = true;
+            timer1.Interval = 5000;
+            timer1.Tick += new EventHandler(Listener);
+        }
+        private void ListenerFrm_Closed(object sender, EventArgs e)
+        {
+            if (formstatus.DialogResult == DialogResult.No)
+            {
+                timer1.Interval = 6000;
+                timer1.Enabled = true;
+            }
+
+        }
+        private void updateWaterFountainStatus()
+        {
+            string cmd = string.Format(@"update tcontainer_status set status='false',gprs_status='0' where datediff(s,upload_time,getdate())>(select nr from tconfig where dm='Heartbeat_timeout')");
+            ClsMSSQL.ExecuteCmd(cmd, ClsDBCon.ConStrKj);
         }
 
         #region showStat()设计状态信息显示函数

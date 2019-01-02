@@ -135,6 +135,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DScontainerheartbeat.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Containerheartbeat\FrmContainerheartbeatWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Containerheartbeat\FrmContainerheartbeatWarn.Designer.cs">
+      <DependentUpon>FrmContainerheartbeatWarn.cs</DependentUpon>
+    </Compile>
     <Compile Include="ContainerInput\DSContainerFountain.cs">
       <DependentUpon>DSContainerFountain.xsd</DependentUpon>
     </Compile>
@@ -404,6 +410,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Containerheartbeat\Containerheartbeat.resx">
       <DependentUpon>Containerheartbeat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Containerheartbeat\FrmContainerheartbeatWarn.resx">
+      <DependentUpon>FrmContainerheartbeatWarn.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ContainerInput\FrmContainerFountain.resx">
