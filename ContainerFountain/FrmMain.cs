@@ -17,6 +17,7 @@ using System.Text.RegularExpressions;
 using DLTLib.Classes;
 using ContainerFountain.Datasets;
 using ContainerFountain.Containerheartbeat;
+using ContainerFountain.NumberQuery;
 
 
 #endregion
@@ -25,8 +26,10 @@ namespace ContainerFountain
 {
     public partial class FrmMain : Form
     {
+        int send =0,send1=0;
        DSedid.vusersRow userRow = VWGContext.Current.Session["userRow"] as DSedid.vusersRow;
         FrmContainerheartbeatWarn formstatus = new FrmContainerheartbeatWarn();
+        FrmNumberQueryWarn formnumber = new FrmNumberQueryWarn();
         public FrmMain()
         {
             InitializeComponent();
@@ -57,6 +60,15 @@ namespace ContainerFountain
                 formstatus.Closed += new EventHandler(ListenerFrm_Closed);
                 timer1.Enabled = false;
             }
+            string cmd1 = string.Format(@"select count(*) from vNumberQuery where datediff(s,record_time,getdate())>(select nr from tconfig where dm='Product_timeout')");
+            //string cmd1 = string.Format(@"select count(*) from vNumberQuery where datediff(s,record_time,getdate())>3600");
+            if (Convert.ToInt32(ClsMSSQL.GetValue(cmd1, ClsDBCon.ConStrKj)) > 0)
+            {
+                formnumber.Prepare();
+                formnumber.ShowDialog();
+                send1 = 1;
+                formnumber.Closed += new EventHandler(ListenerFrm_Closed);
+            }
         }
         private void initListener()
         {
@@ -66,10 +78,21 @@ namespace ContainerFountain
         }
         private void ListenerFrm_Closed(object sender, EventArgs e)
         {
-            if (formstatus.DialogResult == DialogResult.No)
+            if (send == 0)
             {
-                timer1.Interval = 6000;
-                timer1.Enabled = true;
+                if (formstatus.DialogResult == DialogResult.No)
+                {
+                    timer1.Interval = 6000;
+                    timer1.Enabled = true;
+                }
+            }
+            else if (send1==1)
+            {
+                if (formnumber.DialogResult == DialogResult.No)
+                {
+                    timer1.Interval = 6000;
+                    timer1.Enabled = true;
+                }
             }
 
         }

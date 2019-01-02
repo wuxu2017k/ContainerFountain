@@ -225,6 +225,12 @@
     <Compile Include="NumberQuery\FrmNumberQuery.Designer.cs">
       <DependentUpon>FrmNumberQuery.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberQuery\FrmNumberQueryWarn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberQuery\FrmNumberQueryWarn.Designer.cs">
+      <DependentUpon>FrmNumberQueryWarn.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductType\DSproducttype.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -454,6 +460,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NumberQuery\FrmNumberQuery.resx">
       <DependentUpon>FrmNumberQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberQuery\FrmNumberQueryWarn.resx">
+      <DependentUpon>FrmNumberQueryWarn.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductType\FrmProductType.resx">
