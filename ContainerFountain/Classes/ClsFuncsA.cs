@@ -1,4 +1,5 @@
 ﻿using ContainerFountain.ContainerInput;
+using ContainerFountain.NumberQuery;
 using ContainerFountain.ProductType;
 using ContainerFountain.XTGL;
 using DLTLib.Classes;
@@ -87,6 +88,14 @@ namespace ContainerFountain.Classes
             if (string.Compare(aBm, "ProductType", true) == 0)
             {
                 FrmProductType c = new FrmProductType();
+                tp.Controls.Add(c);
+                c.Prepare();
+                return;
+            }
+            //数量查询
+            if(string.Compare(aBm, "NumberQuery", true)==0)
+            {
+                FrmNumberQuery c = new FrmNumberQuery();
                 tp.Controls.Add(c);
                 c.Prepare();
                 return;

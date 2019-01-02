@@ -205,6 +205,20 @@
     <Compile Include="Login\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberQuery\DSNumberQuery.cs">
+      <DependentUpon>DSNumberQuery.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NumberQuery\DSNumberQuery.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNumberQuery.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NumberQuery\FrmNumberQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumberQuery\FrmNumberQuery.Designer.cs">
+      <DependentUpon>FrmNumberQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductType\DSproducttype.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -354,6 +368,17 @@
     <Content Include="ProductType\DSproducttype.xsc">
       <DependentUpon>DSproducttype.xsd</DependentUpon>
     </Content>
+    <Content Include="NumberQuery\DSNumberQuery.xsc">
+      <DependentUpon>DSNumberQuery.xsd</DependentUpon>
+    </Content>
+    <None Include="NumberQuery\DSNumberQuery.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNumberQuery.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="NumberQuery\DSNumberQuery.xss">
+      <DependentUpon>DSNumberQuery.xsd</DependentUpon>
+    </Content>
     <None Include="ProductType\DSproducttype.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -415,6 +440,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberQuery\FrmNumberQuery.resx">
+      <DependentUpon>FrmNumberQuery.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductType\FrmProductType.resx">

@@ -33,17 +33,13 @@ namespace ContainerFountain.Containerheartbeat
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Containerheartbeat));
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
-            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
+            Gizmox.WebGUI.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new Gizmox.WebGUI.Forms.DataGridViewCellStyle();
             this.imageList1 = new Gizmox.WebGUI.Forms.ImageList(this.components);
             this.trV = new Gizmox.WebGUI.Forms.TreeView();
             this.grpLeft = new Gizmox.WebGUI.Forms.GroupBox();
@@ -64,28 +60,24 @@ namespace ContainerFountain.Containerheartbeat
             this.label7 = new Gizmox.WebGUI.Forms.Label();
             this.txtcontainer_no = new Gizmox.WebGUI.Forms.TextBox();
             this.grpTop = new Gizmox.WebGUI.Forms.GroupBox();
+            this.bds = new Gizmox.WebGUI.Forms.BindingSource(this.components);
+            this.dScontainerheartbeat1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeat();
+            this.vcontainerStatusTableAdapter1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeatTableAdapters.vcontainerStatusTableAdapter();
+            this.toptionxmTableAdapter1 = new ContainerFountain.Datasets.DSedidTableAdapters.toptionxmTableAdapter();
+            this.tjigouTableAdapter1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeatTableAdapters.tjigouTableAdapter();
             this.dgv = new Gizmox.WebGUI.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.bds = new Gizmox.WebGUI.Forms.BindingSource(this.components);
-            this.dScontainerheartbeat1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeat();
-            this.dataGridViewTextBoxColumn1 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
-            this.vcontainerStatusTableAdapter1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeatTableAdapters.vcontainerStatusTableAdapter();
-            this.toptionxmTableAdapter1 = new ContainerFountain.Datasets.DSedidTableAdapters.toptionxmTableAdapter();
-            this.tjigouTableAdapter1 = new ContainerFountain.Containerheartbeat.DScontainerheartbeatTableAdapters.tjigouTableAdapter();
-            this.dataGridViewTextBoxColumn11 = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.grpLeft.SuspendLayout();
             this.grpTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dScontainerheartbeat1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -107,7 +99,7 @@ namespace ContainerFountain.Containerheartbeat
             this.trV.Name = "trV";
             this.trV.PerformLayoutEnabled = true;
             this.trV.SelectedImageKey = "Folders.Folders.Folder_yellow_open_16.ico";
-            this.trV.Size = new System.Drawing.Size(194, 446);
+            this.trV.Size = new System.Drawing.Size(194, 548);
             this.trV.TabIndex = 0;
             this.trV.AfterSelect += new Gizmox.WebGUI.Forms.TreeViewEventHandler(this.trV_AfterSelect);
             // 
@@ -120,7 +112,7 @@ namespace ContainerFountain.Containerheartbeat
             this.grpLeft.Location = new System.Drawing.Point(0, 0);
             this.grpLeft.Name = "grpLeft";
             this.grpLeft.PerformLayoutEnabled = true;
-            this.grpLeft.Size = new System.Drawing.Size(200, 466);
+            this.grpLeft.Size = new System.Drawing.Size(200, 568);
             this.grpLeft.TabIndex = 0;
             this.grpLeft.TabStop = false;
             this.grpLeft.Text = "机构树";
@@ -353,93 +345,6 @@ namespace ContainerFountain.Containerheartbeat
             this.grpTop.TabStop = false;
             this.grpTop.Text = "查询模块";
             // 
-            // dgv
-            // 
-            this.dgv.AllowDrag = false;
-            this.dgv.AllowUserToAddRows = false;
-            this.dgv.AllowUserToDeleteRows = false;
-            this.dgv.AllowUserToResizeColumns = false;
-            this.dgv.AllowUserToResizeRows = false;
-            this.dgv.AutoGenerateColumns = false;
-            this.dgv.Columns.AddRange(new Gizmox.WebGUI.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.dgv.DataSource = this.bds;
-            this.dgv.Dock = Gizmox.WebGUI.Forms.DockStyle.Fill;
-            this.dgv.ExcludeFromUniqueId = false;
-            this.dgv.Location = new System.Drawing.Point(200, 87);
-            this.dgv.Name = "dgv";
-            this.dgv.PerformLayoutEnabled = true;
-            this.dgv.ReadOnly = true;
-            this.dgv.RenderCellPanelsAsText = false;
-            this.dgv.RowTemplate.Enabled = true;
-            this.dgv.SelectionMode = Gizmox.WebGUI.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(1180, 379);
-            this.dgv.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "mc";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle23;
-            this.dataGridViewTextBoxColumn4.HeaderText = "机构名称";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "container_no";
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle24;
-            this.dataGridViewTextBoxColumn5.HeaderText = "货柜编号";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "model_type_name";
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle25;
-            this.dataGridViewTextBoxColumn6.HeaderText = "货柜型号";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "screen_type_name";
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle26;
-            this.dataGridViewTextBoxColumn7.HeaderText = "屏幕类型";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "status_name";
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle27;
-            this.dataGridViewTextBoxColumn8.HeaderText = "GPRS状态";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "address";
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle28;
-            this.dataGridViewTextBoxColumn9.HeaderText = "地址";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "upload_time";
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle29;
-            this.dataGridViewTextBoxColumn10.HeaderText = "更新时间";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 150;
-            // 
             // bds
             // 
             this.bds.DataMember = "vcontainerStatus";
@@ -449,30 +354,6 @@ namespace ContainerFountain.Containerheartbeat
             // 
             this.dScontainerheartbeat1.DataSetName = "DScontainerheartbeat";
             this.dScontainerheartbeat1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "mc";
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle30;
-            this.dataGridViewTextBoxColumn1.HeaderText = "机构名称";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "container_no";
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle31;
-            this.dataGridViewTextBoxColumn2.HeaderText = "货柜编号";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "modeltype";
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle32;
-            this.dataGridViewTextBoxColumn3.HeaderText = "货柜型号";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // vcontainerStatusTableAdapter1
             // 
@@ -486,26 +367,105 @@ namespace ContainerFountain.Containerheartbeat
             // 
             this.tjigouTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn11
+            // dgv
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "gprs_signal";
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle33;
-            this.dataGridViewTextBoxColumn11.HeaderText = "心跳";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dgv.AllowDrag = false;
+            this.dgv.AllowUserToAddRows = false;
+            this.dgv.AllowUserToDeleteRows = false;
+            this.dgv.AllowUserToResizeColumns = false;
+            this.dgv.AllowUserToResizeRows = false;
+            this.dgv.AutoGenerateColumns = false;
+            this.dgv.Columns.AddRange(new Gizmox.WebGUI.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.dgv.DataSource = this.bds;
+            this.dgv.Dock = Gizmox.WebGUI.Forms.DockStyle.Fill;
+            this.dgv.ExcludeFromUniqueId = false;
+            this.dgv.Location = new System.Drawing.Point(200, 87);
+            this.dgv.Name = "dgv";
+            this.dgv.PerformLayoutEnabled = true;
+            this.dgv.ReadOnly = true;
+            this.dgv.RenderCellPanelsAsText = false;
+            this.dgv.RowTemplate.Enabled = true;
+            this.dgv.SelectionMode = Gizmox.WebGUI.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv.Size = new System.Drawing.Size(1180, 481);
+            this.dgv.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "container_no";
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn1.HeaderText = "货柜编号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "mc";
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn2.HeaderText = "机构名称";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "model_type_name";
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn3.HeaderText = "货柜型号";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "screen_type_name";
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn4.HeaderText = "屏幕类型";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "gprs_status_name";
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn5.HeaderText = "GPRS状态";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "address";
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn6.HeaderText = "地址";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "upload_time";
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn7.HeaderText = "更新时间";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 200;
             // 
             // Containerheartbeat
             // 
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.grpTop);
             this.Controls.Add(this.grpLeft);
-            this.Size = new System.Drawing.Size(1380, 466);
+            this.Size = new System.Drawing.Size(1380, 568);
             this.Text = "货柜心跳信息";
             this.grpLeft.ResumeLayout(false);
             this.grpTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dScontainerheartbeat1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,6 +496,8 @@ namespace ContainerFountain.Containerheartbeat
         private Label label7;
         private TextBox txtcontainer_no;
         private GroupBox grpTop;
+        private Datasets.DSedidTableAdapters.toptionxmTableAdapter toptionxmTableAdapter1;
+        private DScontainerheartbeatTableAdapters.tjigouTableAdapter tjigouTableAdapter1;
         private DataGridView dgv;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -544,11 +506,5 @@ namespace ContainerFountain.Containerheartbeat
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private Datasets.DSedidTableAdapters.toptionxmTableAdapter toptionxmTableAdapter1;
-        private DScontainerheartbeatTableAdapters.tjigouTableAdapter tjigouTableAdapter1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }
