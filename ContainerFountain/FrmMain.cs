@@ -61,7 +61,7 @@ namespace ContainerFountain
                 formstatus.Closed += new EventHandler(ListenerFrm_Closed);
                 timer1.Enabled = false;
             }
-            string cmd1 = string.Format(@"select count(*) from vNumberQuery where datediff(s,record_time,getdate())>(select nr from tconfig where dm='Product_timeout')");
+            string cmd1 = string.Format(@"select count(*) from vNumberQuery where type_ERR>=capacity/2");
             //string cmd1 = string.Format(@"select count(*) from vNumberQuery where datediff(s,record_time,getdate())>3600");
             if (Convert.ToInt32(ClsMSSQL.GetValue(cmd1, ClsDBCon.ConStrKj)) > 0)
             {

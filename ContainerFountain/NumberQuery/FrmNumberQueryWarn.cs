@@ -23,7 +23,7 @@ namespace ContainerFountain.NumberQuery
         }
         public void Prepare()
         {
-            vNumberQueryTableAdapter1.FillByWhere(dsNumberQuery1.vNumberQuery, "where datediff(s,record_time,getdate())>(select nr from tconfig where dm='Product_timeout'");
+            vNumberQueryTableAdapter1.FillByWhere(dsNumberQuery1.vNumberQuery, "where type_ERR>=capacity/2");
            // vNumberQueryTableAdapter1.FillByWhere(dsNumberQuery1.vNumberQuery, "where datediff(s,record_time,getdate())>3600");
         }
 
